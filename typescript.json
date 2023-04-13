@@ -53,7 +53,7 @@
   "Creates a type that ensures a number is positive": {
     "scope": "typescript",
     "prefix": "VerifyNumberIsPositive",
-    "body": "type VerifyIsPositiveNumber<N extends number> = `${N}`extends `${infer FirstCharacter}${infer Rest}` ? FirstCharacter extends '-' ? never : N : never",
+    "body": "type VerifyIsPositiveNumber<N extends number> = `${${N}}`extends `${infer FirstCharacter}${infer Rest}` ? FirstCharacter extends '-' ? never : N : never",
     "description": "Creates a type that returns the passed number if it is positive, otherwise never is returned."
   }
 }
