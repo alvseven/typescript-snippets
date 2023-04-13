@@ -1,7 +1,7 @@
 {
   "name": "tsnippets",
   "displayName": "Tsnippets",
-  "description": "An powerful extension that helps you to generate utils types for typescript",
+  "description": "A powerful extension that helps you to generate useful typescript types easily, increasing productivity and improving developer experience (DX).",
   "version": "0.0.1",
   "publisher": "alvseven",
   "license": "MIT",
