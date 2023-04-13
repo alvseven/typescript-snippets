@@ -1,0 +1,59 @@
+{
+  "Creates a Record": {
+    "scope": "typescript",
+    "prefix": "AnyRecordObject",
+    "body": "type AnyRecordObject = Record<PropertyKey, unknown>;",
+    "description": "Creates a type using Record where the property value can be of any type."
+  },
+
+  "Creates a mapped type that defines any object": {
+    "scope": "typescript",
+    "prefix": "AnyMappedObject",
+    "body": "type AnyMappedObject = {[key: PropertyKey]: unknown}",
+    "description": "Creates an object with mapped type."
+  },
+
+  "Creates a deep partial": {
+    "scope": "typescript",
+    "prefix": "DeepPartial",
+    "body": [
+      "type VerifyIsObject<T> = T extends Record<PropertyKey, unknown> ? DeepPartial<T> : T",
+      "",
+      "type DeepPartial<T> = {",
+      "  [K in keyof T]?: VerifyIsObject<T[K]>",
+      "} & {}"
+    ],
+    "description": "Creates a deep partial type that makes all properties optional, even the nested ones."
+  },
+
+  "Creates a type that builds a tuple with a range up to the provided number": {
+    "scope": "typescript",
+    "prefix": "RangeTuple",
+    "body": "type RangeTuple<N extends number, Acc extends number[] = []> = Acc['length'] extends N ? Acc : RangeTuple<N, [...Acc, Acc['length']]>",
+    "description": "Creates a type that builds a tuple with a range up to the provided number, the range starts at 0 and progresses by 1."
+  },
+
+  "Creates a type that builds a tuple with the specified length": {
+    "scope": "typescript",
+    "prefix": "BuildTupleOf",
+    "body": "type BuildTupleOf<T, L extends number, A extends unknown[] = []> = A['length'] extends L ? A : BuildTupleOf<T, L, [...A, T]>",
+    "description": "Creates a type that build a tuple with the specified type and length"
+  },
+
+  "Creates a type that returns the number minus one": {
+    "scope": "typescript",
+    "prefix": "MinusOne",
+    "body": [
+      "type BuildTuple<L extends number, A extends unknown[] = []> = A['length'] extends L ? A : BuildTuple<L, [...A, unknown]>",
+      "",
+      "type MinusOne<N extends number> = BuildTuple<N> extends [...(infer S), unknown] ? S['length'] : never"
+    ],
+    "description": "Creates a type that return the number minus one"
+  },
+  "Creates a type that ensures a number is positive": {
+    "scope": "typescript",
+    "prefix": "VerifyNumberIsPositive",
+    "body": "type VerifyIsPositiveNumber<N extends number> = `${N}`extends `${infer FirstCharacter}${infer Rest}` ? FirstCharacter extends '-' ? never : N : never",
+    "description": "Creates a type that returns the passed number if it is positive, otherwise never is returned."
+  }
+}
