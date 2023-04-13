@@ -1,8 +1,13 @@
 {
   "name": "tsnippets",
   "displayName": "Tsnippets",
+  "description": "An powerful extension that helps you to generate utils types for typescript",
   "version": "0.0.1",
+  "publisher": "alvseven",
   "license": "MIT",
+  "categories": [
+    "Snippets"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/alvseven/typescript-snippets"
