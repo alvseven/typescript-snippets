@@ -2,6 +2,15 @@
   "name": "tsnippets",
   "displayName": "Tsnippets",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvseven/typescript-snippets"
+  },
+  "engines": {
+    "vscode": "^1.0.0",
+    "node": ">=17.9.1"
+  },
   "contributes": {
     "snippets": [
       {
