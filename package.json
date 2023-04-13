@@ -4,7 +4,7 @@
   "description": "A powerful extension that helps you to generate useful typescript types easily, increasing productivity and improving developer experience.",
   "version": "0.0.2",
   "publisher": "alvseven",
-  "icon": "images/icon.png",
+  "icon": "assets/icon.png",
   "license": "MIT",
   "categories": [
     "Snippets"
