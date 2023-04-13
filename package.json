@@ -21,7 +21,7 @@
     "snippets": [
       {
         "language": "typescript",
-        "path": "./snippets/typescript.json"
+        "path": "typescript.json"
       }
     ]
   }
