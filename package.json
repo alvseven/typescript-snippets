@@ -1,9 +1,10 @@
 {
   "name": "tsnippets",
   "displayName": "Tsnippets",
-  "description": "A powerful extension that helps you to generate useful typescript types easily, increasing productivity and improving developer experience (DX).",
+  "description": "A powerful extension that helps you to generate useful typescript types easily, increasing productivity and improving developer experience.",
   "version": "0.0.1",
   "publisher": "alvseven",
+  "icon": "images/icon.png",
   "license": "MIT",
   "categories": [
     "Snippets"
