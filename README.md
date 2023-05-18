@@ -1,6 +1,8 @@
-**Snippets de código que geram tipos úteis no typescript, basta digitar o prefixo e a intellisense irá mostrar o tipo, aperte tab e seja feliz**
+**Code snippets that generate useful types in TypeScript. Simply type the prefix and the IntelliSense will display the type. Press tab and enjoy!**
 
-Nomes:
+*Docs coming soon*
+
+Types names:
 
 - AnyRecordObject
 - AnyMappedObject
