@@ -1,4 +1,4 @@
-**Code snippets that generate useful types in TypeScript. Simply type the prefix and the IntelliSense will display the type. Press tab and enjoy!**
+**Code snippets that generate useful types in typescript. Simply type the prefix and the IntelliSense will display the type. Press tab and enjoy!**
 
 *Docs coming soon*
 
