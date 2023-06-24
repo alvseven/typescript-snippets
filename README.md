@@ -1,8 +1,8 @@
-**Code snippets that generate useful types in typescript. Simply type the prefix and the IntelliSense will display the type. Press tab and enjoy!**
+# Code snippets that generate useful types in typescript. Simply type the prefix and the intellisense will display the type. Press tab and enjoy!
 
-*Docs coming soon*
+## *Documentation:*
 
-Types names:
+All types names:
 
 - AnyRecordObject
 - AnyMappedObject
@@ -11,3 +11,7 @@ Types names:
 - BuildTupleOf
 - MinusOne
 - VerifyNumberIsPositive
+- FilterObjectByType
+- ObjectWithAtLeastOneProperty
+- OptionalKeys
+
