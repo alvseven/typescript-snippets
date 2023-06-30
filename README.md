@@ -4,14 +4,22 @@
 
 All types names:
 
-- AnyRecordObject
-- AnyMappedObject
-- DeepPartial
-- RangeTuple
-- BuildTupleOf
-- MinusOne
-- VerifyNumberIsPositive
-- FilterObjectByType
-- ObjectWithAtLeastOneProperty
-- OptionalKeys
+- **VerifyNumberIsPositive**<*Number*>
+- **RangeTuple<*Number*>**
+- **Sum<*FirstNumber, SecondNumber*>**
+- **BuildTuple<*Length*>**
+- **MinusOne<*Number*>**
+- **NonEmptyArray<*Type*>**
+- **GetStringLength<*String*>**
+- **CheckStringLength<*String, Length*>**
+- **GetArrayType<*Array*>**
+- **FilterObjectByType<*Obj, Type*>**
+- **NonEmptyObject<*Obj*>**
+- **OptionalKeys<*Obj, Keys*>**
+- **GetCharacters<*String*>**
+- **ToNumber<*Type*>**
+- **GetNumberIndexes<*Type*>**
+- **AnyRecordObject<>**
+- **AnyMappedObject<>**
+- **DeepPartial<*Type*>**
 
